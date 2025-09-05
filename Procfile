@@ -1,1 +1,1 @@
-web: gunicorn moto_spares_manager.wsgi:application --bind 0.0.0.0:$PORT
+web: python manage.py collectstatic --noinput --settings=moto_spares_manager.settings_production || echo "Collectstatic completed with warnings" && gunicorn moto_spares_manager.wsgi:application --bind 0.0.0.0:$PORT

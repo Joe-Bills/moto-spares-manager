@@ -27,7 +27,7 @@ COPY . /app/
 EXPOSE 8000
 
 # Create startup script
-RUN echo '#!/bin/bash\npython manage.py collectstatic --noinput --settings=moto_spares_manager.settings_production || echo "Collectstatic completed with warnings"\nexec gunicorn --bind 0.0.0.0:8000 moto_spares_manager.wsgi:application' > /app/start.sh && chmod +x /app/start.sh
+RUN echo '#!/bin/bash\npython manage.py collectstatic --noinput --settings=moto_spares_manager.settings_production || echo "Collectstatic completed with warnings"\nPORT=${PORT:-8000}\nexec gunicorn --bind 0.0.0.0:$PORT moto_spares_manager.wsgi:application' > /app/start.sh && chmod +x /app/start.sh
 
 # Run the application
 CMD ["/app/start.sh"]
