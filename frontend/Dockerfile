@@ -19,5 +19,5 @@ RUN npm run build
 # Expose port
 EXPOSE 3000
 
-# Start the preview server
-CMD ["sh", "-c", "npm run preview -- --host 0.0.0.0 --port $PORT"]
+# Start the static file server
+CMD ["sh", "-c", "npm start"]
