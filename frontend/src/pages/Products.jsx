@@ -225,8 +225,6 @@ const Products = () => {
             borderRadius: 12, 
             padding: '36px 36px', 
             minWidth: 480, 
-            maxWidth: 540, 
-            width: 'auto', 
             boxShadow: '0 4px 32px rgba(0,0,0,0.12)', 
             textAlign: 'left',
             maxHeight: '90vh',
