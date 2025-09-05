@@ -1,0 +1,113 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #1a2233;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 0 0 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+  overflow: visible;
+  z-index: 1000;
+}
+.sidebar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #bfa14a;
+  margin: 0 0 32px 32px;
+  letter-spacing: 1px;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.sidebar nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  border-left: 4px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+.sidebar nav a.active, .sidebar nav a:hover {
+  background: #232b3e;
+  border-left: 4px solid #bfa14a;
+  color: #bfa14a;
+}
+.sidebar-toggle-fab {
+  position: absolute;
+  top: 24px;
+  right: -18px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: #bfa14a;
+  border: 2px solid #bfa14a;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 0;
+}
+.sidebar-toggle-fab:hover, .sidebar-toggle-fab:focus {
+  background: #bfa14a;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 16px rgba(191,161,74,0.18);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sidebar-collapsed {
+  width: 60px !important;
+  min-width: 60px;
+  transition: width 0.2s;
+  overflow: visible;
+}
+
+.sidebar-collapsed .sidebar-toggle {
+  margin-left: 8px;
+}
+
+.sidebar-collapsed nav a {
+  justify-content: center;
+  padding: 14px 0;
+}
+
+.sidebar-icon {
+  font-size: 2rem;
+  display: inline-block;
+  width: 44px;
+  text-align: center;
+}
+
+.sidebar-label {
+  margin-left: 16px;
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+.sidebar-collapsed .sidebar-label {
+  display: none;
+} 
