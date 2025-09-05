@@ -1,1 +1,1 @@
-web: sh -c 'python manage.py collectstatic --noinput --settings=moto_spares_manager.settings_production || echo "Collectstatic completed with warnings" && gunicorn moto_spares_manager.wsgi:application --bind 0.0.0.0:8000'
+web: sh -c 'python manage.py collectstatic --noinput --settings=moto_spares_manager.settings_railway || echo "Collectstatic completed with warnings" && gunicorn moto_spares_manager.wsgi:application --bind 0.0.0.0:$PORT --settings=moto_spares_manager.settings_railway'
