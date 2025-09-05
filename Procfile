@@ -1,1 +1,1 @@
-web: python manage.py runserver 0.0.0.0:$PORT --settings=moto_spares_manager.settings_railway
+web: gunicorn moto_spares_manager.wsgi:application --bind 0.0.0.0:$PORT

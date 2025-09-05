@@ -1,7 +1,7 @@
 {
   "$schema": "https://railway.app/railway.schema.json",
   "deploy": {
-    "startCommand": "python manage.py runserver 0.0.0.0:$PORT --settings=moto_spares_manager.settings_railway",
+    "startCommand": "gunicorn moto_spares_manager.wsgi:application --bind 0.0.0.0:$PORT",
     "healthcheckPath": "/api/health/",
     "healthcheckTimeout": 100,
     "restartPolicyType": "ON_FAILURE",
