@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets, permissions, status
 from rest_framework.response import Response
 from .models import Category, Product, Sale, Expense, AuditLog
-from .serializers import CategorySerializer, ProductSerializer, SaleSerializer, ExpenseSerializer
+from .serializers import CategorySerializer, ProductSerializer, SaleSerializer, ExpenseSerializer, AuditLogSerializer
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes, action
@@ -108,7 +108,7 @@ class ExpenseViewSet(viewsets.ModelViewSet):
 class AuditLogViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = AuditLog.objects.all().order_by('-timestamp')
     permission_classes = [permissions.IsAdminUser]
-    serializer_class = type('AuditLogSerializer', (CategorySerializer,), {'Meta': type('Meta', (), {'model': AuditLog, 'fields': '__all__'})})
+    serializer_class = AuditLogSerializer
 
 class UserInfoView(APIView):
     permission_classes = [IsAuthenticated]
