@@ -6,7 +6,7 @@ from .serializers import CategorySerializer, ProductSerializer, SaleSerializer, 
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes, action
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 try:
     from reportlab.pdfgen import canvas
     from openpyxl import Workbook
@@ -490,3 +490,8 @@ def reports_data(request):
     except Exception as e:
         print(f"Reports data error: {e}")
         return Response({'error': str(e)}, status=500)
+
+@api_view(['GET'])
+def health_check(request):
+    """Simple health check endpoint"""
+    return JsonResponse({'status': 'ok', 'message': 'Django app is running'})

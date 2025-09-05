@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import CategoryViewSet, ProductViewSet, SaleViewSet, ExpenseViewSet, UserInfoView, LowStockProductsView, StockValidationView, sales_report_pdf, sales_report_excel, reports_data, AuditLogViewSet
+from .views import CategoryViewSet, ProductViewSet, SaleViewSet, ExpenseViewSet, UserInfoView, LowStockProductsView, StockValidationView, sales_report_pdf, sales_report_excel, reports_data, AuditLogViewSet, health_check
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 router = DefaultRouter()
@@ -12,6 +12,7 @@ router.register(r'audit-logs', AuditLogViewSet, basename='auditlog')
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('health/', health_check, name='health_check'),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('user-info/', UserInfoView.as_view(), name='user_info'),
