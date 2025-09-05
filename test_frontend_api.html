@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Frontend API</title>
+</head>
+<body>
+    <h1>Test Frontend API Connection</h1>
+    <button onclick="testAPI()">Test API Connection</button>
+    <div id="result"></div>
+
+    <script>
+        const API_BASE = 'https://web-production-3b1a6.up.railway.app/api/';
+        
+        async function testAPI() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Testing...';
+            
+            try {
+                // Test health endpoint
+                console.log('Testing health endpoint...');
+                const healthRes = await fetch(API_BASE + 'health/');
+                const healthData = await healthRes.json();
+                console.log('Health response:', healthData);
+                
+                // Test login
+                console.log('Testing login...');
+                const loginRes = await fetch(API_BASE + 'token/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username: 'admin', password: 'admin123' })
+                });
+                const loginData = await loginRes.json();
+                console.log('Login response:', loginData);
+                
+                if (loginData.access) {
+                    // Test products endpoint
+                    console.log('Testing products endpoint...');
+                    const productsRes = await fetch(API_BASE + 'products/', {
+                        headers: { 'Authorization': 'Bearer ' + loginData.access }
+                    });
+                    const productsData = await productsRes.json();
+                    console.log('Products response:', productsData);
+                    
+                    resultDiv.innerHTML = `
+                        <h3>✅ API Test Successful!</h3>
+                        <p><strong>Health:</strong> ${JSON.stringify(healthData)}</p>
+                        <p><strong>Login:</strong> Token received (${loginData.access.substring(0, 20)}...)</p>
+                        <p><strong>Products:</strong> ${productsData.length} products found</p>
+                        <p><strong>First Product:</strong> ${JSON.stringify(productsData[0] || 'No products')}</p>
+                    `;
+                } else {
+                    resultDiv.innerHTML = '<h3>❌ Login Failed</h3><p>' + JSON.stringify(loginData) + '</p>';
+                }
+            } catch (error) {
+                console.error('API Test Error:', error);
+                resultDiv.innerHTML = '<h3>❌ API Test Failed</h3><p>' + error.message + '</p>';
+            }
+        }
+    </script>
+</body>
+</html>

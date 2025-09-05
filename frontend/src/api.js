@@ -1,42 +1,52 @@
 const API_BASE = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL + '/api/' : 'https://web-production-3b1a6.up.railway.app/api/';
 
 export async function fetchMetrics(token) {
-  console.log('API: fetchMetrics called with token:', token ? token.substring(0, 20) + '...' : 'null');
-  console.log('API: Using API_BASE:', API_BASE);
-  
-  const [productsRes, salesRes] = await Promise.all([
-    fetch(API_BASE + 'products/', { headers: { Authorization: 'Bearer ' + token } }),
-    fetch(API_BASE + 'sales/', { headers: { Authorization: 'Bearer ' + token } })
-  ]);
-  
-  console.log('API: Products response status:', productsRes.status);
-  console.log('API: Sales response status:', salesRes.status);
-  
-  const products = await productsRes.json();
-  const sales = await salesRes.json();
-  
-  console.log('API: Products count:', products.length);
-  console.log('API: Sales count:', sales.length);
-  
-  return { products, sales };
+  try {
+    const [productsRes, salesRes] = await Promise.all([
+      fetch(API_BASE + 'products/', { headers: { Authorization: 'Bearer ' + token } }),
+      fetch(API_BASE + 'sales/', { headers: { Authorization: 'Bearer ' + token } })
+    ]);
+    
+    if (!productsRes.ok) {
+      throw new Error(`Products API error: ${productsRes.status} ${productsRes.statusText}`);
+    }
+    if (!salesRes.ok) {
+      throw new Error(`Sales API error: ${salesRes.status} ${salesRes.statusText}`);
+    }
+    
+    const products = await productsRes.json();
+    const sales = await salesRes.json();
+    return { products, sales };
+  } catch (error) {
+    console.error('fetchMetrics error:', error);
+    throw error;
+  }
 }
 
 export async function getProducts(token) {
-  console.log('API: getProducts called with token:', token ? token.substring(0, 20) + '...' : 'null');
-  console.log('API: Using API_BASE:', API_BASE);
-  
-  const res = await fetch(API_BASE + 'products/', { headers: { Authorization: 'Bearer ' + token } });
-  console.log('API: getProducts response status:', res.status);
-  
-  const data = await res.json();
-  console.log('API: getProducts returned:', data.length, 'products');
-  
-  return data;
+  try {
+    const res = await fetch(API_BASE + 'products/', { headers: { Authorization: 'Bearer ' + token } });
+    if (!res.ok) {
+      throw new Error(`Products API error: ${res.status} ${res.statusText}`);
+    }
+    return res.json();
+  } catch (error) {
+    console.error('getProducts error:', error);
+    throw error;
+  }
 }
 
 export async function getCategories(token) {
-  const res = await fetch(API_BASE + 'categories/', { headers: { Authorization: 'Bearer ' + token } });
-  return res.json();
+  try {
+    const res = await fetch(API_BASE + 'categories/', { headers: { Authorization: 'Bearer ' + token } });
+    if (!res.ok) {
+      throw new Error(`Categories API error: ${res.status} ${res.statusText}`);
+    }
+    return res.json();
+  } catch (error) {
+    console.error('getCategories error:', error);
+    throw error;
+  }
 }
 
 export async function addProduct(product, token) {
@@ -90,8 +100,16 @@ export async function deleteProduct(id, token) {
 }
 
 export async function getSales(token) {
-  const res = await fetch(API_BASE + 'sales/', { headers: { Authorization: 'Bearer ' + token } });
-  return res.json();
+  try {
+    const res = await fetch(API_BASE + 'sales/', { headers: { Authorization: 'Bearer ' + token } });
+    if (!res.ok) {
+      throw new Error(`Sales API error: ${res.status} ${res.statusText}`);
+    }
+    return res.json();
+  } catch (error) {
+    console.error('getSales error:', error);
+    throw error;
+  }
 }
 
 export async function addSale(sale, token) {

@@ -13,35 +13,24 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     if (token) {
-      console.log('AuthContext: Starting authentication with token:', token.substring(0, 20) + '...');
-      
       Promise.all([
         fetchUserInfo(token),
-        getBusinessSettings(token).catch((error) => {
-          console.log('AuthContext: Business settings failed, using defaults:', error);
-          return { business_name: 'Moto Spares', currency: 'TZS' };
-        })
+        getBusinessSettings(token).catch(() => ({ business_name: 'Moto Spares', currency: 'TZS' }))
       ])
         .then(([userInfo, settings]) => {
-          console.log('AuthContext: Authentication successful:', { userInfo, settings });
           setUser(userInfo);
           setBusinessName(settings.business_name);
           setCurrency(settings.currency);
           localStorage.setItem('businessName', settings.business_name);
           localStorage.setItem('currency', settings.currency);
         })
-        .catch((error) => {
-          console.error('AuthContext: Authentication failed:', error);
+        .catch(() => {
           setUser(null);
           setToken(null);
           localStorage.removeItem('token');
         })
-        .finally(() => {
-          console.log('AuthContext: Authentication process completed');
-          setLoading(false);
-        });
+        .finally(() => setLoading(false));
     } else {
-      console.log('AuthContext: No token, setting user to null');
       setUser(null);
       setLoading(false);
     }

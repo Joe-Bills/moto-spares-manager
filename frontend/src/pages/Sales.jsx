@@ -24,8 +24,14 @@ const Sales = () => {
       getProducts(token),
       getSales(token)
     ]).then(([prods, salesData]) => {
+      console.log('Sales: Fetched data successfully', { productsCount: prods.length, salesCount: salesData.length });
       setProducts(prods);
       setSales(salesData);
+      setLoading(false);
+    }).catch(error => {
+      console.error('Sales: Error fetching data:', error);
+      setProducts([]);
+      setSales([]);
       setLoading(false);
     });
   }, [token]);
@@ -36,8 +42,14 @@ const Sales = () => {
       getProducts(token),
       getSales(token)
     ]).then(([prods, salesData]) => {
+      console.log('Sales: Refreshed data successfully', { productsCount: prods.length, salesCount: salesData.length });
       setProducts(prods);
       setSales(salesData);
+      setLoading(false);
+    }).catch(error => {
+      console.error('Sales: Error refreshing data:', error);
+      setProducts([]);
+      setSales([]);
       setLoading(false);
     });
   };

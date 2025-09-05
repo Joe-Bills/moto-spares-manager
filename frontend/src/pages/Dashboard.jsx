@@ -37,48 +37,51 @@ const Dashboard = () => {
 
   useEffect(() => {
     if (!token) return;
-    fetchMetrics(token).then(({ products, sales }) => {
-      setProducts(products);
-      setSales(sales);
-      // Calculate total products in stock
-      const totalStock = products.reduce((sum, p) => sum + (p.stock_qty || 0), 0);
-      // Calculate daily sales (today)
-      const today = new Date().toISOString().slice(0, 10);
-      const dailySales = sales.filter(s => s.date && s.date.slice(0, 10) === today);
-      // Calculate monthly revenue
-      const month = today.slice(0, 7);
-      const monthlySales = sales.filter(s => s.date && s.date.slice(0, 7) === month);
-      const monthlyRevenue = monthlySales.reduce((sum, s) => sum + (s.price * s.quantity - s.discount), 0);
-      // Best selling product (by quantity sold)
-      const productSales = {};
-      sales.forEach(sale => {
-        if (!productSales[sale.product]) productSales[sale.product] = 0;
-        productSales[sale.product] += sale.quantity;
-      });
-      let bestProduct = 'N/A';
-      let bestQty = 0;
-      for (const pid in productSales) {
-        if (productSales[pid] > bestQty) {
-          bestQty = productSales[pid];
-          const prod = products.find(p => p.id === Number(pid));
-          bestProduct = prod ? prod.name : pid;
+    
+    fetchMetrics(token)
+      .then(({ products, sales }) => {
+        console.log('Dashboard: Fetched data successfully', { productsCount: products.length, salesCount: sales.length });
+        setProducts(products);
+        setSales(sales);
+        // Calculate total products in stock
+        const totalStock = products.reduce((sum, p) => sum + (p.stock_qty || 0), 0);
+        // Calculate daily sales (today)
+        const today = new Date().toISOString().slice(0, 10);
+        const dailySales = sales.filter(s => s.date && s.date.slice(0, 10) === today);
+        // Calculate monthly revenue
+        const month = today.slice(0, 7);
+        const monthlySales = sales.filter(s => s.date && s.date.slice(0, 7) === month);
+        const monthlyRevenue = monthlySales.reduce((sum, s) => sum + (s.price * s.quantity - s.discount), 0);
+        // Best selling product (by quantity sold)
+        const productSales = {};
+        sales.forEach(sale => {
+          if (!productSales[sale.product]) productSales[sale.product] = 0;
+          productSales[sale.product] += sale.quantity;
+        });
+        let bestProduct = 'N/A';
+        let bestQty = 0;
+        for (const pid in productSales) {
+          if (productSales[pid] > bestQty) {
+            bestQty = productSales[pid];
+            const prod = products.find(p => p.id === Number(pid));
+            bestProduct = prod ? prod.name : pid;
+          }
         }
-      }
-      setMetrics([
-        { title: 'Daily Sales', value: `TZS ${dailySales.reduce((sum, s) => sum + (s.price * s.quantity - s.discount), 0)}` },
-        { title: 'Monthly Revenue', value: `TZS ${monthlyRevenue}` },
-        { title: 'Best Selling Product', value: bestProduct },
-      ]);
+        setMetrics([
+          { title: 'Daily Sales', value: `TZS ${dailySales.reduce((sum, s) => sum + (s.price * s.quantity - s.discount), 0)}` },
+          { title: 'Monthly Revenue', value: `TZS ${monthlyRevenue}` },
+          { title: 'Best Selling Product', value: bestProduct },
+        ]);
 
-      // Prepare sales growth data (last 14 days)
-      const salesByDay = {};
-      for (let i = 13; i >= 0; i--) {
-        const d = new Date();
-        d.setDate(d.getDate() - i);
-        const key = d.toISOString().slice(0, 10);
-        salesByDay[key] = 0;
-      }
-      sales.forEach(s => {
+        // Prepare sales growth data (last 14 days)
+        const salesByDay = {};
+        for (let i = 13; i >= 0; i--) {
+          const d = new Date();
+          d.setDate(d.getDate() - i);
+          const key = d.toISOString().slice(0, 10);
+          salesByDay[key] = 0;
+        }
+        sales.forEach(s => {
         const day = s.date && s.date.slice(0, 10);
         if (salesByDay[day] !== undefined) {
           salesByDay[day] += (s.price * s.quantity - s.discount);
@@ -96,7 +99,18 @@ const Dashboard = () => {
         paymentTypeSales[label] = (paymentTypeSales[label] || 0) + sale.quantity;
       });
       setCategorySales(Object.entries(paymentTypeSales).map(([category, total]) => ({ category, total })));
-    });
+      })
+      .catch(error => {
+        console.error('Dashboard: Error fetching data:', error);
+        // Set empty data on error
+        setProducts([]);
+        setSales([]);
+        setMetrics([
+          { title: 'Daily Sales', value: 'Error loading' },
+          { title: 'Monthly Revenue', value: 'Error loading' },
+          { title: 'Best Selling Product', value: 'Error loading' },
+        ]);
+      });
     refreshLowStock();
   }, [token]);
 

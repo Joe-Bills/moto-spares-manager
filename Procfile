@@ -1,1 +1,1 @@
-web: python manage.py migrate --settings=moto_spares_manager.settings_railway && python create_superuser.py && python init_business_settings.py && python auto_restore_data.py && DJANGO_SETTINGS_MODULE=moto_spares_manager.settings_railway gunicorn moto_spares_manager.wsgi:application --bind 0.0.0.0:$PORT
+web: python manage.py migrate --settings=moto_spares_manager.settings_railway && python create_superuser.py && python init_business_settings.py && DJANGO_SETTINGS_MODULE=moto_spares_manager.settings_railway gunicorn moto_spares_manager.wsgi:application --bind 0.0.0.0:$PORT
