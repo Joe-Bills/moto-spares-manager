@@ -9,4 +9,12 @@ export default defineConfig({
       '/api': 'http://127.0.0.1:8000',
     },
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
+  preview: {
+    port: 3000,
+    host: true,
+  },
 })
