@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["python311", "pip"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[phases.build]
+cmds = ["python manage.py collectstatic --noinput --settings=moto_spares_manager.settings_railway"]
+
+[start]
+cmd = "DJANGO_SETTINGS_MODULE=moto_spares_manager.settings_railway gunicorn moto_spares_manager.wsgi:application --bind 0.0.0.0:$PORT"

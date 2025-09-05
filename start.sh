@@ -1,12 +1,4 @@
 #!/bin/bash
-
-# Collect static files
-python manage.py collectstatic --noinput --settings=moto_spares_manager.settings_production || echo "Collectstatic completed with warnings"
-
-# Set default port if not provided
-if [ -z "$PORT" ]; then
-  PORT=8000
-fi
-
-# Start the application
-exec gunicorn --bind 0.0.0.0:$PORT moto_spares_manager.wsgi:application
+export DJANGO_SETTINGS_MODULE=moto_spares_manager.settings_railway
+python manage.py collectstatic --noinput
+gunicorn moto_spares_manager.wsgi:application --bind 0.0.0.0:$PORT
