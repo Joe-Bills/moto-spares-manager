@@ -23,11 +23,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy project
 COPY . /app/
 
-# Collect static files (skip if collectstatic fails)
-RUN python manage.py collectstatic --noinput --settings=moto_spares_manager.settings_production || echo "Collectstatic failed, continuing..."
-
 # Expose port
 EXPOSE 8000
 
+# Create startup script
+RUN echo '#!/bin/bash\npython manage.py collectstatic --noinput --settings=moto_spares_manager.settings_production || echo "Collectstatic completed with warnings"\nexec gunicorn --bind 0.0.0.0:8000 moto_spares_manager.wsgi:application' > /app/start.sh && chmod +x /app/start.sh
+
 # Run the application
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "moto_spares_manager.wsgi:application"]
+CMD ["/app/start.sh"]

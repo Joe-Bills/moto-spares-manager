@@ -4,6 +4,8 @@ Production settings for moto_spares_manager project.
 
 from .settings import *
 from decouple import config
+
+# Try to import dj_database_url, fallback if not available
 try:
     import dj_database_url
 except ImportError:
