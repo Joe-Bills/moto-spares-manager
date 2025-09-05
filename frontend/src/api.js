@@ -1,4 +1,4 @@
-const API_BASE = '/api/';
+const API_BASE = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL + '/api/' : '/api/';
 
 export async function fetchMetrics(token) {
   const [productsRes, salesRes] = await Promise.all([
@@ -166,7 +166,7 @@ export async function validateStock(productId, quantity, token) {
 }
 
 export async function login(username, password) {
-  const res = await fetch('/api/token/', {
+  const res = await fetch(API_BASE + 'token/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username, password }),
@@ -179,7 +179,7 @@ export async function login(username, password) {
 }
 
 export async function fetchUserInfo(token) {
-  const res = await fetch('/api/user-info/', {
+  const res = await fetch(API_BASE + 'user-info/', {
     headers: { Authorization: 'Bearer ' + token },
   });
   if (!res.ok) {
