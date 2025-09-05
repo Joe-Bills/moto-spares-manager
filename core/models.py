@@ -156,3 +156,23 @@ class AuditLog(models.Model):
 
     def __str__(self):
         return f"{self.timestamp} {self.user} {self.action} {self.model} {self.object_id}"
+
+class BusinessSettings(models.Model):
+    """Store business settings like name, currency, etc."""
+    business_name = models.CharField(max_length=200, default='Moto Spares')
+    currency = models.CharField(max_length=10, default='TZS')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        verbose_name = "Business Settings"
+        verbose_name_plural = "Business Settings"
+    
+    def __str__(self):
+        return f"Business Settings - {self.business_name}"
+    
+    @classmethod
+    def get_settings(cls):
+        """Get or create the single settings instance"""
+        settings, created = cls.objects.get_or_create(pk=1)
+        return settings

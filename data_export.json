@@ -1,0 +1,3197 @@
+{
+  "users": [
+    {
+      "username": "josephbilla",
+      "email": "kingsmen3347@gmail.com",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-07-24T12:42:57+00:00"
+    }
+  ],
+  "categories": [],
+  "products": [
+    {
+      "name": "VIKOMBE VYA SINORAI",
+      "buying_price": 6000.0,
+      "selling_price": 8000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "VIBAO VYA SKYGO",
+      "buying_price": 2000.0,
+      "selling_price": 3000.0,
+      "stock_qty": 6,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "INDICATOR KING LION",
+      "buying_price": 9000.0,
+      "selling_price": 12000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SHOCKUP KING LION",
+      "buying_price": 41000.0,
+      "selling_price": 48000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MAINA KUBWA",
+      "buying_price": 35000.0,
+      "selling_price": 38000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OIL SINORAI",
+      "buying_price": 7500.0,
+      "selling_price": 9000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "INDICATOR NDOGO",
+      "buying_price": 6000.0,
+      "selling_price": 8000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "INDICATOR KUBWA",
+      "buying_price": 2000.0,
+      "selling_price": 3000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SPRAY",
+      "buying_price": 2800.0,
+      "selling_price": 4000.0,
+      "stock_qty": 7,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "FLAT BAR",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CARBURETOR 125",
+      "buying_price": 13000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "KIKI GN",
+      "buying_price": 4000.0,
+      "selling_price": 5000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "KIKI CG",
+      "buying_price": 4000.0,
+      "selling_price": 5000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "RECTIFIRE",
+      "buying_price": 4000.0,
+      "selling_price": 5000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GREASE",
+      "buying_price": 5000.0,
+      "selling_price": 6500.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TUBE NO 100/90-17",
+      "buying_price": 5000.0,
+      "selling_price": 6000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TUBE NO 300-17",
+      "buying_price": 4000.0,
+      "selling_price": 5000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TUBE 300-18",
+      "buying_price": 5000.0,
+      "selling_price": 6000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TUBE NO 110/90-16",
+      "buying_price": 5000.0,
+      "selling_price": 6000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "NGAO YA MBELE",
+      "buying_price": 22000.0,
+      "selling_price": 25000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SEAT SINORAI",
+      "buying_price": 41000.0,
+      "selling_price": 45000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SEAT COVER",
+      "buying_price": 4000.0,
+      "selling_price": 6000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TAA YA NYUMA RED/BLACK",
+      "buying_price": 18000.0,
+      "selling_price": 20000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OIL PUMP",
+      "buying_price": 4500.0,
+      "selling_price": 6000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OIL CUP/KULA",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GASKET OVA ALL",
+      "buying_price": 3000.0,
+      "selling_price": 4000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SEAL KIT/ENGINE",
+      "buying_price": 1500.0,
+      "selling_price": 2500.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OIL STANLEY",
+      "buying_price": 5000.0,
+      "selling_price": 7000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MADIFLAPA MBELE",
+      "buying_price": 2000.0,
+      "selling_price": 3500.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MAGNETO COIL BM",
+      "buying_price": 16000.0,
+      "selling_price": 18000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PLATE CLUTCH KING LION",
+      "buying_price": 5000.0,
+      "selling_price": 6000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PLATE CLUTCH SINORAI",
+      "buying_price": 6000.0,
+      "selling_price": 8000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PISTON KIT 150.9 KING LION",
+      "buying_price": 12000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PISTON KIT CG 150 KING LION",
+      "buying_price": 10000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PISTON KIT CG 150 KING D",
+      "buying_price": 6500.0,
+      "selling_price": 12000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "DASHBOARD GN YUEAO",
+      "buying_price": 13000.0,
+      "selling_price": 16000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MASTER CYLINDER YA JUU",
+      "buying_price": 6500.0,
+      "selling_price": 8000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MASTER CYLINDER YA CHINI",
+      "buying_price": 13000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "WAYARING GN",
+      "buying_price": 10000.0,
+      "selling_price": 12000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TERMINAL WIRE RED",
+      "buying_price": 1000.0,
+      "selling_price": 2000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "EARTHWIRE",
+      "buying_price": 1500.0,
+      "selling_price": 3000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HORN NDOGO YUEAO",
+      "buying_price": 2000.0,
+      "selling_price": 3500.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TARPET ZA CHINI YUEAO",
+      "buying_price": 4000.0,
+      "selling_price": 5000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CAM SHAFT",
+      "buying_price": 9500.0,
+      "selling_price": 11000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CENTER CLUTCH KING D",
+      "buying_price": 10000.0,
+      "selling_price": 13000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HOUSING CLUTCH YUEAO",
+      "buying_price": 11000.0,
+      "selling_price": 13000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PLATE CLUTCH YUEAO",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "KIKI SHAFT KING D",
+      "buying_price": 7000.0,
+      "selling_price": 10000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SHAFT SPOCKET",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OPENA GIA",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "RELAY/ MTOTO STATA",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SELF STATA/ STATA MOTA",
+      "buying_price": 17000.0,
+      "selling_price": 20000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CLEMP MIFUKO",
+      "buying_price": 5000.0,
+      "selling_price": 20000.0,
+      "stock_qty": 200,
+      "is_bulk_product": true,
+      "units_per_box": 100
+    },
+    {
+      "name": "RING PISTON 150",
+      "buying_price": 2000.0,
+      "selling_price": 6000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "RING PISTON 125",
+      "buying_price": 2500.0,
+      "selling_price": 6000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "RING PISTON 180.6 SINORAI",
+      "buying_price": 8000.0,
+      "selling_price": 12000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TIRE MBELE BM 300-17",
+      "buying_price": 36000.0,
+      "selling_price": 45000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TIRE NYUMA BM 100/90-17",
+      "buying_price": 53000.0,
+      "selling_price": 60000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "IGNITION COIL KING D",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "STUDY",
+      "buying_price": 3500.0,
+      "selling_price": 6000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MAFUTA YA BRAKE",
+      "buying_price": 1600.0,
+      "selling_price": 2000.0,
+      "stock_qty": 15,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HORN KUBWA",
+      "buying_price": 4000.0,
+      "selling_price": 6000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SHOO TAA YA MBELE",
+      "buying_price": 10000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MADIGADI BLACK KAWAIDA",
+      "buying_price": 20000.0,
+      "selling_price": 25000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MADIGADI RED KAWAIDA",
+      "buying_price": 20000.0,
+      "selling_price": 25000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MADIGADI BLACK COBRA",
+      "buying_price": 25000.0,
+      "selling_price": 30000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MADIGADI RED COBRA",
+      "buying_price": 23000.0,
+      "selling_price": 28000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "VALVU GAID",
+      "buying_price": 2500.0,
+      "selling_price": 3500.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MSUMARI WA MBELE",
+      "buying_price": 1500.0,
+      "selling_price": 3000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MSUMARI WA KATI",
+      "buying_price": 1700.0,
+      "selling_price": 3000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MSUMARI WA NYUMA",
+      "buying_price": 1800.0,
+      "selling_price": 3500.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MADIFLAPA NYUMA",
+      "buying_price": 2000.0,
+      "selling_price": 3000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "KERYA SINORAI",
+      "buying_price": 30000.0,
+      "selling_price": 35000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MAINA NDOGO",
+      "buying_price": 15000.0,
+      "selling_price": 17000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SEAL SHOCKUP 32/43",
+      "buying_price": 1000.0,
+      "selling_price": 2000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SEAL SHOCKUP 32/44",
+      "buying_price": 1000.0,
+      "selling_price": 2000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "STICK BRAKE",
+      "buying_price": 1200.0,
+      "selling_price": 2000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BENDEX",
+      "buying_price": 4000.0,
+      "selling_price": 6000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GOLOLI ZA BENDEX",
+      "buying_price": 1000.0,
+      "selling_price": 2000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BRAKE LIGHT",
+      "buying_price": 600.0,
+      "selling_price": 2000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HOLDER TAA YA MBELE",
+      "buying_price": 600.0,
+      "selling_price": 2000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HOLDER TAA YA NYUMA",
+      "buying_price": 600.0,
+      "selling_price": 2000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "STAND NDOGO",
+      "buying_price": 3000.0,
+      "selling_price": 6000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "FRIZA PIPE",
+      "buying_price": 700.0,
+      "selling_price": 2000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PIPE YA TURBO",
+      "buying_price": 1500.0,
+      "selling_price": 2500.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BUSH ZA SHOCKUP",
+      "buying_price": 1000.0,
+      "selling_price": 2000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BUSH ZA SIDE COVER",
+      "buying_price": 1000.0,
+      "selling_price": 2000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BUSH ZA TANK",
+      "buying_price": 2500.0,
+      "selling_price": 3000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "FUTIREST SINORAI",
+      "buying_price": 8000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "FUTIREST SINORAI MBELE",
+      "buying_price": 16000.0,
+      "selling_price": 20000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CARBURETOR 150",
+      "buying_price": 13000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TAA YA NYUMA YUEAO",
+      "buying_price": 12000.0,
+      "selling_price": 18000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HABU YA BRAKE SHOE",
+      "buying_price": 11000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HABU SPOCKET",
+      "buying_price": 9000.0,
+      "selling_price": 13000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BULB WAKAWAKA",
+      "buying_price": 2000.0,
+      "selling_price": 3000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "JEMBE BRAKE",
+      "buying_price": 9000.0,
+      "selling_price": 13000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HANDLE SWITCH SINORAI",
+      "buying_price": 16000.0,
+      "selling_price": 20000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TIRE MBELE SINORAI",
+      "buying_price": 36000.0,
+      "selling_price": 45000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TIRE NYUMA SINORAI",
+      "buying_price": 55000.0,
+      "selling_price": 60000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MFUPA ACC",
+      "buying_price": 600.0,
+      "selling_price": 1500.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "STELING GN NZITO",
+      "buying_price": 8000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PLUG YA SINORAI",
+      "buying_price": 15000.0,
+      "selling_price": 25000.0,
+      "stock_qty": 10,
+      "is_bulk_product": true,
+      "units_per_box": 10
+    },
+    {
+      "name": "BATTERY YA GALAXY",
+      "buying_price": 22000.0,
+      "selling_price": 28000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BATTERY YA VBT",
+      "buying_price": 22000.0,
+      "selling_price": 28000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TAA YA MBELE KING D",
+      "buying_price": 13000.0,
+      "selling_price": 18000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MADIGADI YA NYUMA CHUMA",
+      "buying_price": 11000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BUTIRABA",
+      "buying_price": 3000.0,
+      "selling_price": 5000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OIL MOGAS",
+      "buying_price": 8500.0,
+      "selling_price": 10000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OIL TOTALLY",
+      "buying_price": 9700.0,
+      "selling_price": 11000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OIL LUBEX",
+      "buying_price": 6800.0,
+      "selling_price": 8000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OIL ORYX",
+      "buying_price": 7700.0,
+      "selling_price": 9000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OKO KUBWA",
+      "buying_price": 2500.0,
+      "selling_price": 4000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "OKO NDOGO",
+      "buying_price": 1700.0,
+      "selling_price": 3000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TIRE NYUMA 16 GN",
+      "buying_price": 53000.0,
+      "selling_price": 60000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TIRE MBELE 18 GN",
+      "buying_price": 36000.0,
+      "selling_price": 45000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "INDICATOR FEKON GN",
+      "buying_price": 2000.0,
+      "selling_price": 3000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MADIGADI MBELE CHUMA",
+      "buying_price": 11000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MASKIO TAA MBELE",
+      "buying_price": 6500.0,
+      "selling_price": 10000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MASKIO INDICATOR",
+      "buying_price": 1500.0,
+      "selling_price": 3000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HANDLE SWITCH OLD YUEAO",
+      "buying_price": 10000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "STELING GN KAWAIDA",
+      "buying_price": 7000.0,
+      "selling_price": 14000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "KIFUA CHA JUU",
+      "buying_price": 9500.0,
+      "selling_price": 14000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "KIFUA CHA CHINI",
+      "buying_price": 11000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BEARING 6202",
+      "buying_price": 1000.0,
+      "selling_price": 2000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BEARING 6302",
+      "buying_price": 1200.0,
+      "selling_price": 2000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BEARING 6301",
+      "buying_price": 1100.0,
+      "selling_price": 2000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BEARING 6204",
+      "buying_price": 1200.0,
+      "selling_price": 3000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BEARING 6004",
+      "buying_price": 1200.0,
+      "selling_price": 3000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MIRROR HOLDER",
+      "buying_price": 1600.0,
+      "selling_price": 3000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HANDLE CLUTCH NEW",
+      "buying_price": 1600.0,
+      "selling_price": 3500.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HANDLE CLUTCH OLD",
+      "buying_price": 1200.0,
+      "selling_price": 3000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CDI GN",
+      "buying_price": 2500.0,
+      "selling_price": 4000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CDI SINORAY",
+      "buying_price": 8000.0,
+      "selling_price": 12000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MAGNETO COIL YUEAO",
+      "buying_price": 9000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "VINTAPE",
+      "buying_price": 750.0,
+      "selling_price": 1500.0,
+      "stock_qty": 20,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SPRING BRAKE",
+      "buying_price": 300.0,
+      "selling_price": 600.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SPRING STAND NDOGO",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SPRING STAND KUBWA",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BULB SPOTLIGHT GN",
+      "buying_price": 5500.0,
+      "selling_price": 10000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BULB SPOTLIGHT BM",
+      "buying_price": 5500.0,
+      "selling_price": 10000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HAND GRIP",
+      "buying_price": 2000.0,
+      "selling_price": 5000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "KINDA RUBBER",
+      "buying_price": 1500.0,
+      "selling_price": 3000.0,
+      "stock_qty": 7,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GASKET OVA ALL GN",
+      "buying_price": 2500.0,
+      "selling_price": 4000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "NATI NO 19",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "NATI NO 17",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "NALI CHUMA",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "NALI PLASTIC",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "VIKOMBE GN",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SILICON NDOGO",
+      "buying_price": 1600.0,
+      "selling_price": 2500.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "ACCELERATOR KEBO GN",
+      "buying_price": 1200.0,
+      "selling_price": 2500.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CLUTCH KEBO GN",
+      "buying_price": 1500.0,
+      "selling_price": 3000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "ACCELERATOR KEBO BM",
+      "buying_price": 1800.0,
+      "selling_price": 3000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "ACCELERATOR KEBO SINORAI",
+      "buying_price": 3000.0,
+      "selling_price": 4500.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CLUTCH KEBO SINORAI",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CLUTCH KEBO BM (BAJAJI)",
+      "buying_price": 2000.0,
+      "selling_price": 3500.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PLUG YA GN",
+      "buying_price": 1200.0,
+      "selling_price": 2000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PLUG YA TVS",
+      "buying_price": 1300.0,
+      "selling_price": 2000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PLUG YA BM",
+      "buying_price": 1300.0,
+      "selling_price": 2000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SWITCH FUNGUO",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 4,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BRAKE SHOE SINORAI",
+      "buying_price": 2300.0,
+      "selling_price": 4000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BRAKE ARM",
+      "buying_price": 1500.0,
+      "selling_price": 3000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BRAKE PAD",
+      "buying_price": 1200.0,
+      "selling_price": 2500.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "ADJUST CHAIN",
+      "buying_price": 1500.0,
+      "selling_price": 3000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CHAIN KIT SINORAI",
+      "buying_price": 19500.0,
+      "selling_price": 25000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CHAIN SINGLE",
+      "buying_price": 7000.0,
+      "selling_price": 10000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "ARADITE",
+      "buying_price": 1200.0,
+      "selling_price": 2500.0,
+      "stock_qty": 9,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BULB TAA YA MBELE",
+      "buying_price": 1200.0,
+      "selling_price": 2000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BULB INDICATOR",
+      "buying_price": 150.0,
+      "selling_price": 500.0,
+      "stock_qty": 20,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BULB TAA YA NYUMA",
+      "buying_price": 200.0,
+      "selling_price": 500.0,
+      "stock_qty": 20,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BUTIRABA NENE XL",
+      "buying_price": 15000.0,
+      "selling_price": 20000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SIDE MIRROR",
+      "buying_price": 5000.0,
+      "selling_price": 8000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PWEZA",
+      "buying_price": 3000.0,
+      "selling_price": 5000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "KIDONGE",
+      "buying_price": 3000.0,
+      "selling_price": 5000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "HORN SIREN",
+      "buying_price": 7000.0,
+      "selling_price": 10000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "MKANDA",
+      "buying_price": 3000.0,
+      "selling_price": 4000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "STICKER TANK",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BULB FENI",
+      "buying_price": 15000.0,
+      "selling_price": 20000.0,
+      "stock_qty": 2,
+      "is_bulk_product": true,
+      "units_per_box": 2
+    },
+    {
+      "name": "TAA YA WAVU",
+      "buying_price": 30000.0,
+      "selling_price": 35000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SEAL VALVU",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "STICK STELING GN YUEAO",
+      "buying_price": 3500.0,
+      "selling_price": 5000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "CHUPA",
+      "buying_price": 3000.0,
+      "selling_price": 5000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GASKET CYLINDER GN",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GASKET COIL GN",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GASKET BLOCK GN",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GASKET CLUTCH GN",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GASKET CLUTCH BM",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GASKET COIL BM",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GASKET CYLINDER BM",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "UREMBO WA JEMBE",
+      "buying_price": 2500.0,
+      "selling_price": 4000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TAA YA MACHO 12",
+      "buying_price": 8000.0,
+      "selling_price": 12000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "AIR FILTER",
+      "buying_price": 10000.0,
+      "selling_price": 13000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "GLOVES",
+      "buying_price": 10000.0,
+      "selling_price": 15000.0,
+      "stock_qty": 1,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "TAA YA PARKING",
+      "buying_price": 500.0,
+      "selling_price": 1000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "WAKA BOLT",
+      "buying_price": 3500.0,
+      "selling_price": 4000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "PROTAPER",
+      "buying_price": 4000.0,
+      "selling_price": 6000.0,
+      "stock_qty": 2,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "FUSE BOX",
+      "buying_price": 3500.0,
+      "selling_price": 30000.0,
+      "stock_qty": 200,
+      "is_bulk_product": true,
+      "units_per_box": 100
+    },
+    {
+      "name": "GLASS TAA YA MBELE",
+      "buying_price": 2000.0,
+      "selling_price": 3000.0,
+      "stock_qty": 3,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "SPOTLIGHT LIGHT KIDOLE",
+      "buying_price": 3500.0,
+      "selling_price": 7000.0,
+      "stock_qty": 4,
+      "is_bulk_product": true,
+      "units_per_box": 2
+    },
+    {
+      "name": "WASHEL 1/2KG",
+      "buying_price": 3750.0,
+      "selling_price": 33800.0,
+      "stock_qty": 169,
+      "is_bulk_product": true,
+      "units_per_box": 169
+    },
+    {
+      "name": "NATI NDEFU",
+      "buying_price": 4000.0,
+      "selling_price": 10000.0,
+      "stock_qty": 10,
+      "is_bulk_product": true,
+      "units_per_box": 10
+    },
+    {
+      "name": "NATI FUPI",
+      "buying_price": 4000.0,
+      "selling_price": 4500.0,
+      "stock_qty": 9,
+      "is_bulk_product": true,
+      "units_per_box": 9
+    },
+    {
+      "name": "UZI WA MOTO",
+      "buying_price": 300.0,
+      "selling_price": 1000.0,
+      "stock_qty": 10,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    },
+    {
+      "name": "BOLT NO 13 INCH 2",
+      "buying_price": 3500.0,
+      "selling_price": 11500.0,
+      "stock_qty": 23,
+      "is_bulk_product": true,
+      "units_per_box": 23
+    },
+    {
+      "name": "BOLT NO 10 INCH 1",
+      "buying_price": 3500.0,
+      "selling_price": 17400.0,
+      "stock_qty": 58,
+      "is_bulk_product": true,
+      "units_per_box": 58
+    },
+    {
+      "name": "BOLT NO 10 INCH 2",
+      "buying_price": 3500.0,
+      "selling_price": 13200.0,
+      "stock_qty": 44,
+      "is_bulk_product": true,
+      "units_per_box": 44
+    },
+    {
+      "name": "VALVU ENGINE",
+      "buying_price": 2500.0,
+      "selling_price": 3500.0,
+      "stock_qty": 5,
+      "is_bulk_product": false,
+      "units_per_box": 1
+    }
+  ],
+  "sales": [
+    {
+      "product": 334,
+      "quantity": 1,
+      "price": 2500.0,
+      "discount": 0.0,
+      "payment_type": "cash",
+      "date": "2025-09-04T15:10:19.229158+00:00"
+    },
+    {
+      "product": 351,
+      "quantity": 1,
+      "price": 2500.0,
+      "discount": 0.0,
+      "payment_type": "cash",
+      "date": "2025-09-04T15:10:36.496277+00:00"
+    }
+  ],
+  "expenses": [],
+  "audit_logs": [
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "186",
+      "details": "Created product VIKOMBE VYA SINORAI",
+      "timestamp": "2025-09-03T12:20:49.464173+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "187",
+      "details": "Created product VIBAO VYA SKYGO",
+      "timestamp": "2025-09-03T12:21:37.564695+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "188",
+      "details": "Created product INDICATOR KING LION",
+      "timestamp": "2025-09-03T12:23:38.049843+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "189",
+      "details": "Created product SHOCKUP KING LION",
+      "timestamp": "2025-09-03T12:24:44.240704+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "190",
+      "details": "Created product MAINA KUBWA",
+      "timestamp": "2025-09-03T12:25:35.440694+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "191",
+      "details": "Created product OIL SINORAI",
+      "timestamp": "2025-09-03T12:26:07.898662+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "192",
+      "details": "Created product INDICATOR NDOGO",
+      "timestamp": "2025-09-03T12:27:23.854113+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "193",
+      "details": "Created product INDICATOR KUBWA",
+      "timestamp": "2025-09-03T12:28:04.126993+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "194",
+      "details": "Created product SPRAY",
+      "timestamp": "2025-09-03T12:28:20.925137+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "195",
+      "details": "Created product FLAT BAR",
+      "timestamp": "2025-09-03T12:28:37.377463+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "196",
+      "details": "Created product CARBURETOR 125",
+      "timestamp": "2025-09-03T12:29:30.422379+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "197",
+      "details": "Created product KIKI GN",
+      "timestamp": "2025-09-03T12:31:17.600801+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "198",
+      "details": "Created product KIKI CG",
+      "timestamp": "2025-09-03T12:31:39.285036+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "199",
+      "details": "Created product RECTIFIRE",
+      "timestamp": "2025-09-03T12:32:07.808740+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "200",
+      "details": "Created product GREASE",
+      "timestamp": "2025-09-03T12:32:37.295982+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "201",
+      "details": "Created product TUBE NO 100/90-17",
+      "timestamp": "2025-09-03T12:33:35.648641+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "202",
+      "details": "Created product TUBE NO 300-17",
+      "timestamp": "2025-09-03T12:34:26.052907+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "203",
+      "details": "Created product TUBE 300-18",
+      "timestamp": "2025-09-03T12:34:57.112309+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "204",
+      "details": "Created product TUBE NO 110/90-16",
+      "timestamp": "2025-09-03T12:35:35.195832+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "205",
+      "details": "Created product NGAO YA MBELE",
+      "timestamp": "2025-09-03T12:36:11.481373+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "206",
+      "details": "Created product SEAT SINORAI",
+      "timestamp": "2025-09-03T12:36:47.366111+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "207",
+      "details": "Created product SEAT COVER",
+      "timestamp": "2025-09-03T12:37:03.036345+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "208",
+      "details": "Created product TAA YA NYUMA RED/BLACK",
+      "timestamp": "2025-09-03T12:37:32.984844+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "209",
+      "details": "Created product OIL PUMP",
+      "timestamp": "2025-09-03T12:37:55.560714+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "210",
+      "details": "Created product OIL CUP/KULA",
+      "timestamp": "2025-09-03T12:38:36.762420+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "211",
+      "details": "Created product GASKET OVA ALL",
+      "timestamp": "2025-09-03T12:40:02.217281+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "212",
+      "details": "Created product SEAL KIT/ENGINE",
+      "timestamp": "2025-09-03T12:40:27.734665+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "213",
+      "details": "Created product OIL STANLEY",
+      "timestamp": "2025-09-03T12:40:48.230799+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "214",
+      "details": "Created product MADIFLAPA MBELE",
+      "timestamp": "2025-09-03T12:41:10.376783+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "215",
+      "details": "Created product MAGNETO COIL BM",
+      "timestamp": "2025-09-03T12:41:29.697792+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "216",
+      "details": "Created product PLATE CLUTCH KING LION",
+      "timestamp": "2025-09-03T12:41:51.531387+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "217",
+      "details": "Created product PLATE CLUTCH SINORAI",
+      "timestamp": "2025-09-03T12:42:24.702840+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "218",
+      "details": "Created product PISTON KIT 150.9 KING LION",
+      "timestamp": "2025-09-03T12:42:57.485086+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "219",
+      "details": "Created product PISTON KIT CG 150 KING LION",
+      "timestamp": "2025-09-03T12:44:02.021683+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "220",
+      "details": "Created product PISTON KIT CG 150 KING D",
+      "timestamp": "2025-09-03T12:44:57.443945+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "221",
+      "details": "Created product DASHBOARD GN YUEAO",
+      "timestamp": "2025-09-03T12:45:41.801605+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "222",
+      "details": "Created product MASTER CYLINDER YA JUU",
+      "timestamp": "2025-09-03T12:46:24.581138+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "223",
+      "details": "Created product MASTER CYLINDER YA CHINI",
+      "timestamp": "2025-09-03T12:46:47.919827+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "224",
+      "details": "Created product WAYARING GN",
+      "timestamp": "2025-09-03T12:47:11.373648+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "225",
+      "details": "Created product TERMINAL WIRE RED",
+      "timestamp": "2025-09-03T12:47:52.048630+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "226",
+      "details": "Created product EARTHWIRE",
+      "timestamp": "2025-09-03T12:48:22.565443+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "227",
+      "details": "Created product HORN NDOGO YUEAO",
+      "timestamp": "2025-09-03T12:48:48.234303+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "228",
+      "details": "Created product TARPET ZA CHINI YUEAO",
+      "timestamp": "2025-09-03T12:49:20.944203+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "229",
+      "details": "Created product CAM SHAFT",
+      "timestamp": "2025-09-03T12:49:47.051346+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "230",
+      "details": "Created product CENTER CLUTCH KING D",
+      "timestamp": "2025-09-03T12:54:00.484279+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "231",
+      "details": "Created product HOUSING CLUTCH YUEAO",
+      "timestamp": "2025-09-03T12:54:27.808195+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "232",
+      "details": "Created product PLATE CLUTCH YUEAO",
+      "timestamp": "2025-09-03T12:55:11.482839+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "233",
+      "details": "Created product KIKI SHAFT KING D",
+      "timestamp": "2025-09-03T12:55:58.932508+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "234",
+      "details": "Created product SHAFT SPOCKET",
+      "timestamp": "2025-09-03T12:56:28.761600+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "235",
+      "details": "Created product OPENA GIA",
+      "timestamp": "2025-09-03T12:56:57.946833+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "236",
+      "details": "Created product RELAY/ MTOTO STATA",
+      "timestamp": "2025-09-03T12:57:26.223224+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "237",
+      "details": "Created product SELF STATA/ STATA MOTA",
+      "timestamp": "2025-09-03T12:57:49.280713+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "238",
+      "details": "Created product CLEMP MIFUKO",
+      "timestamp": "2025-09-03T13:00:36.071937+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "239",
+      "details": "Created product RING PISTON 150",
+      "timestamp": "2025-09-03T13:02:19.271459+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "240",
+      "details": "Created product RING PISTON 125",
+      "timestamp": "2025-09-03T13:02:45.610936+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "241",
+      "details": "Created product RING PISTON 180.6 SINORAI",
+      "timestamp": "2025-09-03T13:03:38.184077+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "242",
+      "details": "Created product TIRE MBELE BM 300-17",
+      "timestamp": "2025-09-03T13:04:03.408954+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "243",
+      "details": "Created product TIRE NYUMA BM 100/90-17",
+      "timestamp": "2025-09-03T13:04:40.515679+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "244",
+      "details": "Created product IGNITION COIL KING D",
+      "timestamp": "2025-09-03T13:05:06.147941+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "245",
+      "details": "Created product STUDY",
+      "timestamp": "2025-09-03T13:05:30.886514+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "246",
+      "details": "Created product MAFUTA YA BRAKE",
+      "timestamp": "2025-09-03T13:06:06.770944+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "247",
+      "details": "Created product HORN KUBWA",
+      "timestamp": "2025-09-03T13:06:36.415357+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "248",
+      "details": "Created product SHOO TAA YA MBELE",
+      "timestamp": "2025-09-03T13:07:08.638388+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "249",
+      "details": "Created product MADIGADI BLACK KAWAIDA",
+      "timestamp": "2025-09-03T13:08:00.901798+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "250",
+      "details": "Created product MADIGADI RED KAWAIDA",
+      "timestamp": "2025-09-03T13:08:30.378842+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "251",
+      "details": "Created product MADIGADI BLACK COBRA",
+      "timestamp": "2025-09-03T13:08:57.850744+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "252",
+      "details": "Created product MADIGADI RED COBRA",
+      "timestamp": "2025-09-03T13:09:22.046365+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "253",
+      "details": "Created product VALVU GAID",
+      "timestamp": "2025-09-03T13:09:39.024563+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "254",
+      "details": "Created product MSUMARI WA MBELE",
+      "timestamp": "2025-09-03T13:09:56.272726+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "255",
+      "details": "Created product MSUMARI WA KATI",
+      "timestamp": "2025-09-03T13:10:41.448344+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "256",
+      "details": "Created product MSUMARI WA NYUMA",
+      "timestamp": "2025-09-03T13:11:04.150690+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "257",
+      "details": "Created product MADIFLAPA NYUMA",
+      "timestamp": "2025-09-03T13:11:29.058031+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "258",
+      "details": "Created product KERYA SINORAI",
+      "timestamp": "2025-09-03T13:12:30.213650+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "259",
+      "details": "Created product MAINA NDOGO",
+      "timestamp": "2025-09-03T13:12:57.288018+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "260",
+      "details": "Created product SEAL SHOCKUP 32/43",
+      "timestamp": "2025-09-03T13:14:31.789853+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "261",
+      "details": "Created product SEAL SHOCKUP 32/44",
+      "timestamp": "2025-09-03T13:15:58.577845+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "262",
+      "details": "Created product STICK BRAKE",
+      "timestamp": "2025-09-03T13:16:16.205604+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "263",
+      "details": "Created product BENDEX",
+      "timestamp": "2025-09-03T13:16:40.285243+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "264",
+      "details": "Created product GOLOLI ZA BENDEX",
+      "timestamp": "2025-09-03T13:17:06.451871+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "265",
+      "details": "Created product BRAKE LIGHT",
+      "timestamp": "2025-09-03T13:17:28.576612+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "266",
+      "details": "Created product HOLDER TAA YA MBELE",
+      "timestamp": "2025-09-03T13:18:30.690212+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "267",
+      "details": "Created product HOLDER TAA YA NYUMA",
+      "timestamp": "2025-09-03T13:19:10.520129+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "268",
+      "details": "Created product STAND NDOGO",
+      "timestamp": "2025-09-03T13:21:09.458343+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "269",
+      "details": "Created product FRIZA PIPE",
+      "timestamp": "2025-09-03T13:21:44.386779+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "270",
+      "details": "Created product PIPE YA TURBO",
+      "timestamp": "2025-09-03T13:22:21.048306+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "271",
+      "details": "Created product BUSH ZA SHOCKUP",
+      "timestamp": "2025-09-03T13:22:58.720429+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "272",
+      "details": "Created product BUSH ZA SIDE COVER",
+      "timestamp": "2025-09-03T13:23:25.481815+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "273",
+      "details": "Created product BUSH ZA TANK",
+      "timestamp": "2025-09-03T13:23:51.779160+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "274",
+      "details": "Created product FUTIREST SINORAI",
+      "timestamp": "2025-09-03T13:24:55.329063+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "275",
+      "details": "Created product FUTIREST SINORAI MBELE",
+      "timestamp": "2025-09-03T13:25:35.066503+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "276",
+      "details": "Created product CARBURETOR 150",
+      "timestamp": "2025-09-03T13:25:59.735850+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "277",
+      "details": "Created product TAA YA NYUMA YUEAO",
+      "timestamp": "2025-09-03T13:26:31.422057+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "278",
+      "details": "Created product HABU YA BRAKE SHOE",
+      "timestamp": "2025-09-03T13:27:02.305769+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "279",
+      "details": "Created product HABU SPOCKET",
+      "timestamp": "2025-09-03T13:27:24.977873+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "280",
+      "details": "Created product BULB WAKAWAKA",
+      "timestamp": "2025-09-03T13:27:49.406198+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "281",
+      "details": "Created product JEMBE BRAKE",
+      "timestamp": "2025-09-03T13:28:16.793060+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "282",
+      "details": "Created product HANDLE SWITCH SINORAI",
+      "timestamp": "2025-09-03T13:28:43.944169+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "283",
+      "details": "Created product TIRE MBELE SINORAI",
+      "timestamp": "2025-09-03T13:29:41.366538+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "284",
+      "details": "Created product TIRE NYUMA SINORAI",
+      "timestamp": "2025-09-03T13:30:05.633632+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "285",
+      "details": "Created product MFUPA ACC",
+      "timestamp": "2025-09-03T13:31:17.160408+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "286",
+      "details": "Created product STELING GN NZITO",
+      "timestamp": "2025-09-03T13:31:56.744007+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "287",
+      "details": "Created product PLUG YA SINORAI",
+      "timestamp": "2025-09-03T13:33:07.316528+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "288",
+      "details": "Created product BATTERY YA GALAXY",
+      "timestamp": "2025-09-03T13:34:11.808814+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "289",
+      "details": "Created product BATTERY YA VBT",
+      "timestamp": "2025-09-03T13:34:52.133569+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "290",
+      "details": "Created product TAA YA MBELE KING D",
+      "timestamp": "2025-09-03T13:35:38.353643+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "291",
+      "details": "Created product MADIGADI YA NYUMA CHUMA",
+      "timestamp": "2025-09-03T13:36:31.164634+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "292",
+      "details": "Created product BUTIRABA",
+      "timestamp": "2025-09-03T13:37:06.617192+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "293",
+      "details": "Created product OIL MOGAS",
+      "timestamp": "2025-09-03T13:37:46.868394+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "294",
+      "details": "Created product OIL TOTALLY",
+      "timestamp": "2025-09-03T13:38:23.533987+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "295",
+      "details": "Created product OIL LUBEX",
+      "timestamp": "2025-09-03T13:38:55.279018+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "296",
+      "details": "Created product OIL ORYX",
+      "timestamp": "2025-09-03T13:39:29.601988+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "297",
+      "details": "Created product OKO KUBWA",
+      "timestamp": "2025-09-03T13:46:17.305386+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "298",
+      "details": "Created product OKO NDOGO",
+      "timestamp": "2025-09-03T13:46:41.089095+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "299",
+      "details": "Created product TIRE NYUMA 16 GN",
+      "timestamp": "2025-09-03T13:49:27.428462+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "300",
+      "details": "Created product TIRE MBELE 18 GN",
+      "timestamp": "2025-09-03T13:52:14.415136+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "301",
+      "details": "Created product INDICATOR FEKON GN",
+      "timestamp": "2025-09-03T13:52:59.170459+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "302",
+      "details": "Created product MADIGADI MBELE CHUMA",
+      "timestamp": "2025-09-03T13:53:44.508915+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "303",
+      "details": "Created product MASKIO TAA MBELE",
+      "timestamp": "2025-09-03T13:54:21.678084+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "304",
+      "details": "Created product MASKIO INDICATOR",
+      "timestamp": "2025-09-03T13:55:32.885487+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "305",
+      "details": "Created product HANDLE SWITCH OLD YUEAO",
+      "timestamp": "2025-09-03T13:56:21.492972+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "306",
+      "details": "Created product STELING GN KAWAIDA",
+      "timestamp": "2025-09-03T13:56:57.414824+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "307",
+      "details": "Created product KIFUA CHA JUU",
+      "timestamp": "2025-09-03T13:57:36.342564+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "308",
+      "details": "Created product KIFUA CHA CHINI",
+      "timestamp": "2025-09-03T13:58:36.889775+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "309",
+      "details": "Created product BEARING 6202",
+      "timestamp": "2025-09-03T13:59:17.130119+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "310",
+      "details": "Created product BEARING 6302",
+      "timestamp": "2025-09-03T13:59:47.155128+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "311",
+      "details": "Created product BEARING 6301",
+      "timestamp": "2025-09-03T14:00:17.609873+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "312",
+      "details": "Created product BEARING 6204",
+      "timestamp": "2025-09-03T14:01:07.632324+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "313",
+      "details": "Created product BEARING 6004",
+      "timestamp": "2025-09-03T14:02:50.642976+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "314",
+      "details": "Created product MIRROR HOLDER",
+      "timestamp": "2025-09-03T14:03:18.692922+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "315",
+      "details": "Created product HANDLE CLUTCH NEW",
+      "timestamp": "2025-09-03T14:03:56.902368+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "316",
+      "details": "Created product HANDLE CLUTCH OLD",
+      "timestamp": "2025-09-03T14:04:19.369608+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "317",
+      "details": "Created product CDI GN",
+      "timestamp": "2025-09-03T14:04:49.125165+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "318",
+      "details": "Created product CDI SINORAY",
+      "timestamp": "2025-09-03T14:05:34.186750+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "319",
+      "details": "Created product MAGNETO COIL YUEAO",
+      "timestamp": "2025-09-03T14:06:37.338311+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "320",
+      "details": "Created product VINTAPE",
+      "timestamp": "2025-09-03T14:07:07.075753+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "321",
+      "details": "Created product SPRING BRAKE",
+      "timestamp": "2025-09-03T14:07:40.350239+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "322",
+      "details": "Created product SPRING STAND NDOGO",
+      "timestamp": "2025-09-03T14:08:29.221456+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "323",
+      "details": "Created product SPRING STAND KUBWA",
+      "timestamp": "2025-09-03T14:08:55.038372+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "324",
+      "details": "Created product BULB SPOTLIGHT GN",
+      "timestamp": "2025-09-03T14:10:26.769677+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "325",
+      "details": "Created product BULB SPOTLIGHT BM",
+      "timestamp": "2025-09-03T14:11:05.886257+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "326",
+      "details": "Created product HAND GRIP",
+      "timestamp": "2025-09-03T14:12:03.248686+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "327",
+      "details": "Created product KINDA RUBBER",
+      "timestamp": "2025-09-03T14:12:49.468114+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "328",
+      "details": "Created product GASKET OVA ALL GN",
+      "timestamp": "2025-09-03T14:14:04.140858+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "329",
+      "details": "Created product NATI NO 19",
+      "timestamp": "2025-09-03T14:15:02.398016+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "330",
+      "details": "Created product NATI NO 17",
+      "timestamp": "2025-09-03T14:15:39.677716+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "331",
+      "details": "Created product NALI CHUMA",
+      "timestamp": "2025-09-03T14:17:02.001668+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "332",
+      "details": "Created product NALI PLASTIC",
+      "timestamp": "2025-09-03T14:17:29.157886+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "333",
+      "details": "Created product VIKOMBE GN",
+      "timestamp": "2025-09-03T14:18:14.204846+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "334",
+      "details": "Created product SILICON NDOGO",
+      "timestamp": "2025-09-03T14:18:58.225844+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "335",
+      "details": "Created product ACCELERATOR KEBO GN",
+      "timestamp": "2025-09-03T14:19:31.851172+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "336",
+      "details": "Created product CLUTCH KEBO GN",
+      "timestamp": "2025-09-03T14:22:41.757092+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "337",
+      "details": "Created product ACCELERATOR KEBO BM",
+      "timestamp": "2025-09-03T14:23:32.851113+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "338",
+      "details": "Created product ACCELERATOR KEBO SINORAI",
+      "timestamp": "2025-09-03T14:24:41.946680+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "339",
+      "details": "Created product CLUTCH KEBO SINORAI",
+      "timestamp": "2025-09-03T14:25:20.130577+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "340",
+      "details": "Created product CLUTCH KEBO BM (BAJAJI)",
+      "timestamp": "2025-09-03T14:26:10.983337+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "341",
+      "details": "Created product PLUG YA GN",
+      "timestamp": "2025-09-03T14:26:42.987949+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "342",
+      "details": "Created product PLUG YA TVS",
+      "timestamp": "2025-09-03T14:27:17.398621+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "343",
+      "details": "Created product PLUG YA BM",
+      "timestamp": "2025-09-03T14:27:49.294815+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "344",
+      "details": "Created product SWITCH FUNGUO",
+      "timestamp": "2025-09-03T14:28:23.385238+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "345",
+      "details": "Created product BRAKE SHOE SINORAI",
+      "timestamp": "2025-09-03T14:28:52.674625+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "346",
+      "details": "Created product BRAKE ARM",
+      "timestamp": "2025-09-03T14:29:34.945182+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "347",
+      "details": "Created product BRAKE PAD",
+      "timestamp": "2025-09-03T14:30:23.682318+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "348",
+      "details": "Created product ADJUST CHAIN",
+      "timestamp": "2025-09-03T14:30:54.275496+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "349",
+      "details": "Created product CHAIN KIT SINORAI",
+      "timestamp": "2025-09-03T14:31:36.740694+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "350",
+      "details": "Created product CHAIN SINGLE",
+      "timestamp": "2025-09-03T14:32:02.075365+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "351",
+      "details": "Created product ARADITE",
+      "timestamp": "2025-09-03T14:32:35.049152+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "352",
+      "details": "Created product BULB TAA YA MBELE",
+      "timestamp": "2025-09-03T14:33:18.548751+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "353",
+      "details": "Created product BULB INDICATOR",
+      "timestamp": "2025-09-03T14:34:04.255132+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "354",
+      "details": "Created product BULB TAA YA NYUMA",
+      "timestamp": "2025-09-03T14:34:47.172084+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "355",
+      "details": "Created product BUTIRABA NENE XL",
+      "timestamp": "2025-09-03T14:35:28.377857+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "356",
+      "details": "Created product SIDE MIRROR",
+      "timestamp": "2025-09-03T14:35:53.456672+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "357",
+      "details": "Created product PWEZA",
+      "timestamp": "2025-09-03T14:36:19.460977+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "358",
+      "details": "Created product KIDONGE",
+      "timestamp": "2025-09-03T14:36:52.165252+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "359",
+      "details": "Created product HORN SIREN",
+      "timestamp": "2025-09-03T14:37:26.436222+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "360",
+      "details": "Created product MKANDA",
+      "timestamp": "2025-09-03T14:37:48.640051+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "361",
+      "details": "Created product STICKER TANK",
+      "timestamp": "2025-09-03T14:39:18.151650+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "362",
+      "details": "Created product BULB FENI",
+      "timestamp": "2025-09-03T14:41:01.643859+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "363",
+      "details": "Created product TAA YA WAVU",
+      "timestamp": "2025-09-03T14:41:38.351780+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "364",
+      "details": "Created product SEAL VALVU",
+      "timestamp": "2025-09-03T14:42:10.513772+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "365",
+      "details": "Created product STICK STELING GN YUEAO",
+      "timestamp": "2025-09-03T14:42:49.476337+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "366",
+      "details": "Created product CHUPA",
+      "timestamp": "2025-09-03T14:43:14.643168+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "367",
+      "details": "Created product GASKET CYLINDER GN",
+      "timestamp": "2025-09-03T14:44:11.098224+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "368",
+      "details": "Created product GASKET COIL GN",
+      "timestamp": "2025-09-03T14:44:45.868868+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "369",
+      "details": "Created product GASKET BLOCK GN",
+      "timestamp": "2025-09-03T14:45:13.656631+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "370",
+      "details": "Created product GASKET CLACH GN",
+      "timestamp": "2025-09-03T14:45:54.001573+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "371",
+      "details": "Created product GASKET CLACH BM",
+      "timestamp": "2025-09-03T14:46:43.025033+00:00"
+    },
+    {
+      "action": "update",
+      "model": "Product",
+      "object_id": "370",
+      "details": "Updated product GASKET CLUTCH GN",
+      "timestamp": "2025-09-03T14:47:23.438975+00:00"
+    },
+    {
+      "action": "update",
+      "model": "Product",
+      "object_id": "371",
+      "details": "Updated product GASKET CLUTCH BM",
+      "timestamp": "2025-09-03T14:47:39.056337+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "372",
+      "details": "Created product GASKET COIL BM",
+      "timestamp": "2025-09-03T14:48:27.444752+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "373",
+      "details": "Created product GASKET CYLINDER BM",
+      "timestamp": "2025-09-03T14:48:59.280212+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "374",
+      "details": "Created product UREMBO WA JEMBE",
+      "timestamp": "2025-09-03T14:50:03.592085+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "375",
+      "details": "Created product TAA YA MACHO 12",
+      "timestamp": "2025-09-03T14:50:36.117349+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "376",
+      "details": "Created product AIR FILTER",
+      "timestamp": "2025-09-03T14:51:03.810452+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "377",
+      "details": "Created product GLOVES",
+      "timestamp": "2025-09-03T14:51:34.995377+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "378",
+      "details": "Created product TAA YA PARKING",
+      "timestamp": "2025-09-03T14:52:45.038988+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "379",
+      "details": "Created product WAKA BOLT",
+      "timestamp": "2025-09-03T14:53:10.112921+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "380",
+      "details": "Created product PROTAPER",
+      "timestamp": "2025-09-03T14:53:36.334495+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "381",
+      "details": "Created product FUSE BOX",
+      "timestamp": "2025-09-03T14:55:01.675989+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "382",
+      "details": "Created product GLASS TAA YA MBELE",
+      "timestamp": "2025-09-03T14:56:06.090690+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "383",
+      "details": "Created product SPOTLIGHT LIGHT KIDOLE",
+      "timestamp": "2025-09-03T15:07:33.914345+00:00"
+    },
+    {
+      "action": "update",
+      "model": "Product",
+      "object_id": "383",
+      "details": "Updated product SPOTLIGHT LIGHT KIDOLE",
+      "timestamp": "2025-09-03T15:08:34.936495+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "384",
+      "details": "Created product WASHEL 1/2KG",
+      "timestamp": "2025-09-03T17:01:43.224085+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "385",
+      "details": "Created product NATI NDEFU",
+      "timestamp": "2025-09-03T17:06:37.405978+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "386",
+      "details": "Created product NATI FUPI",
+      "timestamp": "2025-09-03T17:08:09.277114+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "387",
+      "details": "Created product UZI WA MOTO",
+      "timestamp": "2025-09-03T17:11:49.996255+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "388",
+      "details": "Created product BOLT NO 13 INCH 2",
+      "timestamp": "2025-09-03T17:14:24.862993+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "389",
+      "details": "Created product BOLT NO 10 INCH 1",
+      "timestamp": "2025-09-03T17:19:48.497425+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "390",
+      "details": "Created product BOLT NO 10 INCH 2",
+      "timestamp": "2025-09-03T17:20:29.707845+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Product",
+      "object_id": "391",
+      "details": "Created product VALVU ENGINE",
+      "timestamp": "2025-09-03T17:21:35.089870+00:00"
+    },
+    {
+      "action": "update",
+      "model": "Product",
+      "object_id": "390",
+      "details": "Updated product BOLT NO 10 INCH 2",
+      "timestamp": "2025-09-03T17:23:50.941413+00:00"
+    },
+    {
+      "action": "update",
+      "model": "Product",
+      "object_id": "389",
+      "details": "Updated product BOLT NO 10 INCH 1",
+      "timestamp": "2025-09-03T17:25:34.044851+00:00"
+    },
+    {
+      "action": "update",
+      "model": "Product",
+      "object_id": "388",
+      "details": "Updated product BOLT NO 13 INCH 2",
+      "timestamp": "2025-09-03T17:26:02.376112+00:00"
+    },
+    {
+      "action": "update",
+      "model": "Product",
+      "object_id": "386",
+      "details": "Updated product NATI FUPI",
+      "timestamp": "2025-09-03T17:26:29.898691+00:00"
+    },
+    {
+      "action": "update",
+      "model": "Product",
+      "object_id": "385",
+      "details": "Updated product NATI NDEFU",
+      "timestamp": "2025-09-03T17:26:46.970416+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Sale",
+      "object_id": "20",
+      "details": "Created sale #20 for SILICON NDOGO x 1",
+      "timestamp": "2025-09-04T15:10:19.241159+00:00"
+    },
+    {
+      "action": "create",
+      "model": "Sale",
+      "object_id": "21",
+      "details": "Created sale #21 for ARADITE x 1",
+      "timestamp": "2025-09-04T15:10:36.503283+00:00"
+    }
+  ]
+}

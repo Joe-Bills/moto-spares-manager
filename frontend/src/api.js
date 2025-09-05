@@ -211,4 +211,29 @@ export async function getReportsData(token, fromDate = '', toDate = '') {
     headers: { Authorization: 'Bearer ' + token } 
   });
   return res.json();
+}
+
+export async function getBusinessSettings(token) {
+  const res = await fetch(API_BASE + 'business-settings/', {
+    headers: { Authorization: 'Bearer ' + token }
+  });
+  if (!res.ok) {
+    throw new Error('Failed to fetch business settings');
+  }
+  return res.json();
+}
+
+export async function updateBusinessSettings(token, settings) {
+  const res = await fetch(API_BASE + 'business-settings/', {
+    method: 'PUT',
+    headers: { 
+      'Content-Type': 'application/json',
+      Authorization: 'Bearer ' + token 
+    },
+    body: JSON.stringify(settings)
+  });
+  if (!res.ok) {
+    throw new Error('Failed to update business settings');
+  }
+  return res.json();
 } 

@@ -1,15 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useBusinessName } from '../AuthContext';
 
 const Settings = () => {
-  const { businessName, updateBusinessName } = useBusinessName();
+  const { businessName, updateBusinessName, currency, updateCurrency } = useBusinessName();
   const [name, setName] = useState(businessName);
-  const [currency, setCurrency] = useState('TZS');
+  const [selectedCurrency, setSelectedCurrency] = useState(currency);
+  const [saving, setSaving] = useState(false);
 
-  const handleSave = e => {
+  useEffect(() => {
+    setName(businessName);
+  }, [businessName]);
+
+  useEffect(() => {
+    setSelectedCurrency(currency);
+  }, [currency]);
+
+  const handleSave = async e => {
     e.preventDefault();
-    updateBusinessName(name);
-    alert('Business info saved!');
+    setSaving(true);
+    try {
+      await Promise.all([
+        updateBusinessName(name),
+        updateCurrency(selectedCurrency)
+      ]);
+      alert('Business info saved successfully!');
+    } catch (error) {
+      alert('Failed to save settings. Please try again.');
+      console.error('Save error:', error);
+    } finally {
+      setSaving(false);
+    }
   };
 
   return (
@@ -24,14 +44,16 @@ const Settings = () => {
         </div>
         <div style={{ marginBottom: 18 }}>
           <label>Currency:<br />
-            <select value={currency} onChange={e => setCurrency(e.target.value)} style={{ width: '100%', padding: '12px 14px', borderRadius: 8, border: '1.5px solid #ccc', background: '#f7f7fa', color: '#232b3e', fontSize: '1.08rem', boxSizing: 'border-box', outline: 'none', transition: 'border 0.2s' }}>
+            <select value={selectedCurrency} onChange={e => setSelectedCurrency(e.target.value)} style={{ width: '100%', padding: '12px 14px', borderRadius: 8, border: '1.5px solid #ccc', background: '#f7f7fa', color: '#232b3e', fontSize: '1.08rem', boxSizing: 'border-box', outline: 'none', transition: 'border 0.2s' }}>
               <option value="TZS">TZS (Tanzanian Shilling)</option>
               <option value="USD">USD (US Dollar)</option>
               <option value="KES">KES (Kenyan Shilling)</option>
             </select>
           </label>
         </div>
-        <button type="submit" style={{ background: '#bfa14a', color: '#fff', border: 'none', borderRadius: 4, padding: '10px 0', fontWeight: 'bold', fontSize: '1.08rem', cursor: 'pointer', width: '100%' }}>Save</button>
+        <button type="submit" disabled={saving} style={{ background: saving ? '#ccc' : '#bfa14a', color: '#fff', border: 'none', borderRadius: 4, padding: '10px 0', fontWeight: 'bold', fontSize: '1.08rem', cursor: saving ? 'not-allowed' : 'pointer', width: '100%' }}>
+          {saving ? 'Saving...' : 'Save'}
+        </button>
       </form>
     </div>
   );

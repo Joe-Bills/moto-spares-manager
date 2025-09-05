@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets, permissions, status
 from rest_framework.response import Response
-from .models import Category, Product, Sale, Expense, AuditLog
-from .serializers import CategorySerializer, ProductSerializer, SaleSerializer, ExpenseSerializer, AuditLogSerializer
+from .models import Category, Product, Sale, Expense, AuditLog, BusinessSettings
+from .serializers import CategorySerializer, ProductSerializer, SaleSerializer, ExpenseSerializer, AuditLogSerializer, BusinessSettingsSerializer
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes, action
@@ -499,3 +499,20 @@ def health_check(request):
 def simple_test(request):
     """Ultra-simple test endpoint"""
     return JsonResponse({'message': 'Django is working!'})
+
+@api_view(['GET', 'PUT'])
+@permission_classes([IsAuthenticated])
+def business_settings(request):
+    """Get or update business settings"""
+    if request.method == 'GET':
+        settings = BusinessSettings.get_settings()
+        serializer = BusinessSettingsSerializer(settings)
+        return Response(serializer.data)
+    
+    elif request.method == 'PUT':
+        settings = BusinessSettings.get_settings()
+        serializer = BusinessSettingsSerializer(settings, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

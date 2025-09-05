@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import CategoryViewSet, ProductViewSet, SaleViewSet, ExpenseViewSet, UserInfoView, LowStockProductsView, StockValidationView, sales_report_pdf, sales_report_excel, reports_data, AuditLogViewSet, health_check, simple_test
+from .views import CategoryViewSet, ProductViewSet, SaleViewSet, ExpenseViewSet, UserInfoView, LowStockProductsView, StockValidationView, sales_report_pdf, sales_report_excel, reports_data, AuditLogViewSet, health_check, simple_test, business_settings
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 router = DefaultRouter()
@@ -22,6 +22,7 @@ urlpatterns = [
     path('reports/sales/pdf/', sales_report_pdf, name='sales_report_pdf'),
     path('reports/sales/excel/', sales_report_excel, name='sales_report_excel'),
     path('reports/data/', reports_data, name='reports_data'),
+    path('business-settings/', business_settings, name='business_settings'),
     path('auth/', include('djoser.urls')),  # registration, password reset, etc.
     path('auth/', include('djoser.urls.jwt')),  # JWT endpoints for djoser
 ] 

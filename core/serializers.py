@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Category, Product, Sale, Expense, AuditLog
+from .models import Category, Product, Sale, Expense, AuditLog, BusinessSettings
 from django.conf import settings
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -46,4 +46,9 @@ class ExpenseSerializer(serializers.ModelSerializer):
 class AuditLogSerializer(serializers.ModelSerializer):
     class Meta:
         model = AuditLog
-        fields = '__all__' 
+        fields = '__all__'
+
+class BusinessSettingsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BusinessSettings
+        fields = ['business_name', 'currency', 'created_at', 'updated_at'] 

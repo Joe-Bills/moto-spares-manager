@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { fetchUserInfo } from './api';
+import { fetchUserInfo, getBusinessSettings, updateBusinessSettings } from './api';
 
 const AuthContext = createContext();
 const BusinessNameContext = createContext();
@@ -9,11 +9,21 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(!!token);
   const [businessName, setBusinessName] = useState(() => localStorage.getItem('businessName') || 'Moto Spares');
+  const [currency, setCurrency] = useState(() => localStorage.getItem('currency') || 'TZS');
 
   useEffect(() => {
     if (token) {
-      fetchUserInfo(token)
-        .then(setUser)
+      Promise.all([
+        fetchUserInfo(token),
+        getBusinessSettings(token).catch(() => ({ business_name: 'Moto Spares', currency: 'TZS' }))
+      ])
+        .then(([userInfo, settings]) => {
+          setUser(userInfo);
+          setBusinessName(settings.business_name);
+          setCurrency(settings.currency);
+          localStorage.setItem('businessName', settings.business_name);
+          localStorage.setItem('currency', settings.currency);
+        })
         .catch(() => {
           setUser(null);
           setToken(null);
@@ -38,14 +48,45 @@ export function AuthProvider({ children }) {
     localStorage.removeItem('token');
   };
 
-  const updateBusinessName = (name) => {
-    setBusinessName(name);
-    localStorage.setItem('businessName', name);
+  const updateBusinessName = async (name) => {
+    if (token) {
+      try {
+        await updateBusinessSettings(token, { business_name: name });
+        setBusinessName(name);
+        localStorage.setItem('businessName', name);
+      } catch (error) {
+        console.error('Failed to update business name:', error);
+        // Fallback to local storage only
+        setBusinessName(name);
+        localStorage.setItem('businessName', name);
+      }
+    } else {
+      setBusinessName(name);
+      localStorage.setItem('businessName', name);
+    }
+  };
+
+  const updateCurrency = async (newCurrency) => {
+    if (token) {
+      try {
+        await updateBusinessSettings(token, { currency: newCurrency });
+        setCurrency(newCurrency);
+        localStorage.setItem('currency', newCurrency);
+      } catch (error) {
+        console.error('Failed to update currency:', error);
+        // Fallback to local storage only
+        setCurrency(newCurrency);
+        localStorage.setItem('currency', newCurrency);
+      }
+    } else {
+      setCurrency(newCurrency);
+      localStorage.setItem('currency', newCurrency);
+    }
   };
 
   return (
     <AuthContext.Provider value={{ token, user, login, logout, loading }}>
-      <BusinessNameContext.Provider value={{ businessName, updateBusinessName }}>
+      <BusinessNameContext.Provider value={{ businessName, updateBusinessName, currency, updateCurrency }}>
         {children}
       </BusinessNameContext.Provider>
     </AuthContext.Provider>
