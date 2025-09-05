@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL + '/api/' : '/api/';
+const API_BASE = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL + '/api/' : 'https://web-production-3b1a6.up.railway.app/api/';
 
 export async function fetchMetrics(token) {
   const [productsRes, salesRes] = await Promise.all([
