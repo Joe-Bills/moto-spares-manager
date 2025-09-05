@@ -19,9 +19,13 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import RedirectView
+import os
+
+# Get frontend URL from environment or use localhost for development
+FRONTEND_URL = os.environ.get('FRONTEND_URL', 'http://localhost:5173/')
 
 urlpatterns = [
-    path('', RedirectView.as_view(url='http://localhost:5173/', permanent=False)),
+    path('', RedirectView.as_view(url=FRONTEND_URL, permanent=False)),
     path('admin/', admin.site.urls),
     path('api/', include('core.urls')),
 ]
