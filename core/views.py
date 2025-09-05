@@ -7,6 +7,8 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes, action
 from django.http import HttpResponse, JsonResponse
+from rest_framework_simplejwt.views import TokenObtainPairView
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 try:
     from reportlab.pdfgen import canvas
     from openpyxl import Workbook
@@ -28,9 +30,47 @@ class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
     permission_classes = [IsAuthenticated]
+    
+    def perform_create(self, serializer):
+        obj = serializer.save()
+        log_action(self.request.user, 'create', 'Category', obj.id, f'Created category {obj.name}')
+    
+    def perform_update(self, serializer):
+        obj = serializer.save()
+        log_action(self.request.user, 'update', 'Category', obj.id, f'Updated category {obj.name}')
+    
+    def perform_destroy(self, instance):
+        log_action(self.request.user, 'delete', 'Category', instance.id, f'Deleted category {instance.name}')
+        instance.delete()
 
 def log_action(user, action, model, object_id, details=''):
     AuditLog.objects.create(user=user, action=action, model=model, object_id=str(object_id), details=details)
+
+class CustomTokenObtainPairView(TokenObtainPairView):
+    """Custom login view that logs successful logins"""
+    
+    def post(self, request, *args, **kwargs):
+        response = super().post(request, *args, **kwargs)
+        
+        # Only log if login was successful (status 200)
+        if response.status_code == 200:
+            try:
+                # Get the username from the request data
+                username = request.data.get('username')
+                if username:
+                    # Find the user and log the login
+                    from django.contrib.auth import get_user_model
+                    User = get_user_model()
+                    try:
+                        user = User.objects.get(username=username)
+                        log_action(user, 'login', 'User', user.id, f'User {username} logged in successfully')
+                    except User.DoesNotExist:
+                        pass  # User not found, skip logging
+            except Exception as e:
+                # Don't let audit logging break the login process
+                print(f"Audit logging error during login: {e}")
+        
+        return response
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
@@ -514,5 +554,6 @@ def business_settings(request):
         serializer = BusinessSettingsSerializer(settings, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
+            log_action(request.user, 'update', 'BusinessSettings', settings.id, f'Updated business settings: {request.data}')
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
