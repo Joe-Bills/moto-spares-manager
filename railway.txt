@@ -1,0 +1,2 @@
+backend:https://web-production-3b1a6.up.railway.app/
+frontend:https://web-production-22b33.up.railway.app/

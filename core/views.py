@@ -7,8 +7,12 @@ from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes, action
 from django.http import HttpResponse
-from reportlab.pdfgen import canvas
-from openpyxl import Workbook
+try:
+    from reportlab.pdfgen import canvas
+    from openpyxl import Workbook
+    REPORTLAB_AVAILABLE = True
+except ImportError:
+    REPORTLAB_AVAILABLE = False
 import io
 from django.core.exceptions import ValidationError
 
@@ -162,6 +166,9 @@ class StockValidationView(APIView):
 @api_view(['GET'])
 @permission_classes([permissions.IsAdminUser])
 def sales_report_pdf(request):
+    if not REPORTLAB_AVAILABLE:
+        return HttpResponse("PDF generation not available. Please install reportlab.", status=503)
+    
     try:
         from .models import Sale
         from datetime import datetime
@@ -301,6 +308,9 @@ def sales_report_pdf(request):
 @api_view(['GET'])
 @permission_classes([permissions.IsAdminUser])
 def sales_report_excel(request):
+    if not REPORTLAB_AVAILABLE:
+        return HttpResponse("Excel generation not available. Please install openpyxl.", status=503)
+    
     try:
         from .models import Sale
         from datetime import datetime
