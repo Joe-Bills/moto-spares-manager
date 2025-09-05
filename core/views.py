@@ -493,5 +493,12 @@ def reports_data(request):
 
 @api_view(['GET'])
 def health_check(request):
-    """Simple health check endpoint"""
-    return JsonResponse({'status': 'ok', 'message': 'Django app is running'})
+    """Simple health check endpoint with debugging info"""
+    from django.conf import settings
+    return JsonResponse({
+        'status': 'ok', 
+        'message': 'Django app is running',
+        'debug': settings.DEBUG,
+        'allowed_hosts': settings.ALLOWED_HOSTS,
+        'settings_module': settings.SETTINGS_MODULE
+    })
