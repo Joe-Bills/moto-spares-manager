@@ -21,6 +21,22 @@ const scrollbarStyles = `
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: #a8a8a8;
   }
+  
+  .sortable-header:hover {
+    background-color: #f0f0f0 !important;
+    transition: background-color 0.2s ease;
+  }
+  
+  .sort-controls button:hover {
+    background-color: #f8f9fa !important;
+    border-color: #bfa14a !important;
+    transition: all 0.2s ease;
+  }
+  
+  .sort-controls select:hover {
+    border-color: #bfa14a !important;
+    transition: border-color 0.2s ease;
+  }
 `;
 
 const Products = () => {
@@ -31,6 +47,8 @@ const Products = () => {
   const [showForm, setShowForm] = useState(false);
   const [editProduct, setEditProduct] = useState(null);
   const [viewProduct, setViewProduct] = useState(null);
+  const [sortField, setSortField] = useState('name');
+  const [sortDirection, setSortDirection] = useState('asc');
 
   useEffect(() => {
     refresh();
@@ -68,9 +86,57 @@ const Products = () => {
     setViewProduct(null);
   };
 
-  const filtered = products.filter(p =>
-    !search || p.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const handleSort = (field) => {
+    if (sortField === field) {
+      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortField(field);
+      setSortDirection('asc');
+    }
+  };
+
+  const getSortIcon = (field) => {
+    if (sortField !== field) return '↕️';
+    return sortDirection === 'asc' ? '↑' : '↓';
+  };
+
+  const filtered = products
+    .filter(p => !search || p.name.toLowerCase().includes(search.toLowerCase()))
+    .sort((a, b) => {
+      let aValue, bValue;
+      
+      switch (sortField) {
+        case 'name':
+          aValue = a.name.toLowerCase();
+          bValue = b.name.toLowerCase();
+          break;
+        case 'buying_price':
+          aValue = parseFloat(a.buying_price) || 0;
+          bValue = parseFloat(b.buying_price) || 0;
+          break;
+        case 'selling_price':
+          aValue = parseFloat(a.selling_price) || 0;
+          bValue = parseFloat(b.selling_price) || 0;
+          break;
+        case 'stock_qty':
+          aValue = parseInt(a.stock_qty) || 0;
+          bValue = parseInt(b.stock_qty) || 0;
+          break;
+        case 'stock_status':
+          // Custom order for stock status
+          const statusOrder = { 'out_of_stock': 0, 'critical': 1, 'low': 2, 'medium': 3, 'normal': 4 };
+          aValue = statusOrder[a.stock_status] || 5;
+          bValue = statusOrder[b.stock_status] || 5;
+          break;
+        default:
+          aValue = a[sortField] || '';
+          bValue = b[sortField] || '';
+      }
+      
+      if (aValue < bValue) return sortDirection === 'asc' ? -1 : 1;
+      if (aValue > bValue) return sortDirection === 'asc' ? 1 : -1;
+      return 0;
+    });
 
   // Calculate total available stock cost and value
   const totalStockCost = filtered.reduce((total, product) => {
@@ -120,7 +186,7 @@ const Products = () => {
         <h2>Products</h2>
         {isAdmin && <button style={{ background: '#bfa14a', color: '#fff', border: 'none', borderRadius: 4, padding: '8px 18px', cursor: 'pointer', fontWeight: 'bold' }} onClick={handleAdd}>Add Product</button>}
       </div>
-      <div style={{ display: 'flex', gap: 18, marginBottom: 18, alignItems: 'center' }}>
+      <div style={{ display: 'flex', gap: 18, marginBottom: 18, alignItems: 'center', flexWrap: 'wrap' }}>
         <input 
           placeholder="Search by name..." 
           value={search} 
@@ -138,6 +204,49 @@ const Products = () => {
             flex: 1,
           }} 
         />
+        
+        {/* Sorting Controls */}
+        <div className="sort-controls" style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+          <span style={{ fontSize: '0.9rem', color: '#666', fontWeight: 'bold' }}>Sort by:</span>
+          <select 
+            value={sortField} 
+            onChange={e => setSortField(e.target.value)}
+            style={{
+              padding: '8px 12px',
+              borderRadius: 6,
+              border: '1.5px solid #ccc',
+              background: '#fff',
+              color: '#232b3e',
+              fontSize: '0.9rem',
+              outline: 'none',
+              cursor: 'pointer'
+            }}
+          >
+            <option value="name">Name</option>
+            <option value="buying_price">Buying Price</option>
+            <option value="selling_price">Selling Price</option>
+            <option value="stock_qty">Stock Quantity</option>
+            <option value="stock_status">Stock Status</option>
+          </select>
+          <button
+            onClick={() => setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc')}
+            style={{
+              padding: '8px 12px',
+              borderRadius: 6,
+              border: '1.5px solid #ccc',
+              background: '#fff',
+              color: '#232b3e',
+              fontSize: '0.9rem',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 4,
+              fontWeight: 'bold'
+            }}
+          >
+            {getSortIcon(sortField)} {sortDirection === 'asc' ? 'Ascending' : 'Descending'}
+          </button>
+        </div>
         <div style={{
           background: '#f8f9fa',
           border: '1px solid #e9ecef',
@@ -205,7 +314,17 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <ProductTable products={filtered} onEdit={handleEdit} onDelete={handleDelete} isAdmin={isAdmin} onView={handleView} />
+      <ProductTable 
+        products={filtered} 
+        onEdit={handleEdit} 
+        onDelete={handleDelete} 
+        isAdmin={isAdmin} 
+        onView={handleView}
+        sortField={sortField}
+        sortDirection={sortDirection}
+        onSort={handleSort}
+        getSortIcon={getSortIcon}
+      />
       {showForm && isAdmin && (
         <div style={{ 
           position: 'fixed', 

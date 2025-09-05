@@ -23,18 +23,48 @@ def get_auth_token(username, password):
             print(f"Response content: {e.response.text}")
         return None
 
-def upload_products_without_images(token, products_data):
+def clear_all_products(token):
+    print("Clearing all existing products...")
+    headers = {"Authorization": f"Bearer {token}"}
+    
+    # Get all products
+    try:
+        response = requests.get(f"{BASE_URL}products/", headers=headers)
+        response.raise_for_status()
+        products = response.json()
+        print(f"Found {len(products)} products to delete")
+        
+        # Delete each product
+        deleted_count = 0
+        for product in products:
+            try:
+                delete_response = requests.delete(f"{BASE_URL}products/{product['id']}/", headers=headers)
+                delete_response.raise_for_status()
+                deleted_count += 1
+                if deleted_count % 50 == 0:
+                    print(f"Deleted {deleted_count} products so far...")
+            except RequestException as e:
+                print(f"Failed to delete product {product.get('name', 'Unknown')}: {e}")
+        
+        print(f"✓ Deleted {deleted_count} products")
+        return deleted_count
+        
+    except RequestException as e:
+        print(f"Error getting products list: {e}")
+        return 0
+
+def upload_products_once(token, products_data):
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
     success_count = 0
     
-    print(f"Uploading {len(products_data)} products without images...")
+    print(f"Uploading {len(products_data)} products (once only)...")
     
     for product_data in products_data:
         try:
             # Extract data from the 'fields' structure
             fields = product_data.get('fields', {})
             
-            # Remove image-related fields that cause validation errors
+            # Create clean product data
             clean_product = {
                 'name': fields.get('name', ''),
                 'buying_price': fields.get('buying_price', '0.00'),
@@ -53,25 +83,18 @@ def upload_products_without_images(token, products_data):
                 
         except RequestException as e:
             product_name = fields.get('name', 'Unknown')
-            error_message = f"✗ Failed to create product {product_name}: {e}"
-            if hasattr(e, 'response') and e.response is not None:
-                try:
-                    error_detail = e.response.json()
-                    error_message += f" - {error_detail}"
-                except:
-                    error_message += f" - {e.response.text}"
-            print(error_message)
+            print(f"✗ Failed to create product {product_name}: {e}")
     
     print(f"\n✓ Successfully created {success_count} products!")
     return success_count
 
 def main():
-    print("=== UPLOADING PRODUCTS WITHOUT IMAGES ===")
+    print("=== CLEARING AND UPLOADING PRODUCTS (NO DUPLICATES) ===")
     
     # Get authentication token
     token = get_auth_token(USERNAME, PASSWORD)
     if not token:
-        print("Failed to get authentication token. Aborting upload.")
+        print("Failed to get authentication token. Aborting.")
         return
     
     # Load exported data
@@ -86,22 +109,24 @@ def main():
     products_data = exported_data.get('Product', [])
     if not products_data:
         print("No products found in export file!")
-        print(f"Available keys: {list(exported_data.keys())}")
         return
     
     print(f"Found {len(products_data)} products to upload")
     
-    # Upload products
-    success_count = upload_products_without_images(token, products_data)
+    # Clear all existing products
+    deleted_count = clear_all_products(token)
     
-    # Verify upload
-    print("\nVerifying upload...")
+    # Upload products once
+    success_count = upload_products_once(token, products_data)
+    
+    # Verify final count
+    print("\nVerifying final upload...")
     headers = {"Authorization": f"Bearer {token}"}
     try:
         response = requests.get(f"{BASE_URL}products/", headers=headers)
         response.raise_for_status()
         products = response.json()
-        print(f"✓ Products in production: {len(products)}")
+        print(f"✓ Final product count: {len(products)}")
         
         if len(products) > 0:
             print(f"✓ First product: {products[0]['name']}")
@@ -110,7 +135,7 @@ def main():
     except RequestException as e:
         print(f"Error verifying upload: {e}")
     
-    print(f"\n🎉 Upload complete! {success_count} products uploaded successfully!")
+    print(f"\n🎉 Upload complete! {success_count} products uploaded (no duplicates)!")
 
 if __name__ == '__main__':
     main()

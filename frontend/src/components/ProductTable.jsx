@@ -7,7 +7,7 @@ const rowColors = ['#fff', '#f7f7fa'];
 
 const formatTZS = n => `TZS ${Number(n).toLocaleString()}`;
 
-const ProductTable = ({ products, onEdit, onDelete, isAdmin, onView }) => {
+const ProductTable = ({ products, onEdit, onDelete, isAdmin, onView, sortField, sortDirection, onSort, getSortIcon }) => {
   // Calculate overall totals
   let totalCapital = 0;
   let totalExpectedSells = 0;
@@ -161,10 +161,63 @@ const ProductTable = ({ products, onEdit, onDelete, isAdmin, onView }) => {
         <thead style={{ position: 'sticky', top: 0, background: '#fffbe7', zIndex: 1 }}>
           <tr style={{ color: '#bfa14a', textAlign: 'left' }}>
             <th style={{ boxSizing: 'border-box', width: 60, padding: '12px 8px', textAlign: 'center' }}>Image</th>
-            <th style={{ boxSizing: 'border-box', width: 260, padding: '12px 8px', textAlign: 'left' }}>Product Name</th>
-            <th style={{ boxSizing: 'border-box', width: 110, padding: '12px 8px', textAlign: 'right' }}>Buying Price</th>
-            <th style={{ boxSizing: 'border-box', width: 110, padding: '12px 8px', textAlign: 'right' }}>Selling Price</th>
-            <th style={{ boxSizing: 'border-box', width: 110, padding: '12px 8px', textAlign: 'center' }}>Stock Qty</th>
+            <th 
+              className="sortable-header"
+              style={{ 
+                boxSizing: 'border-box', 
+                width: 260, 
+                padding: '12px 8px', 
+                textAlign: 'left',
+                cursor: 'pointer',
+                userSelect: 'none',
+                position: 'relative'
+              }}
+              onClick={() => onSort('name')}
+            >
+              Product Name {getSortIcon('name')}
+            </th>
+            <th 
+              className="sortable-header"
+              style={{ 
+                boxSizing: 'border-box', 
+                width: 110, 
+                padding: '12px 8px', 
+                textAlign: 'right',
+                cursor: 'pointer',
+                userSelect: 'none'
+              }}
+              onClick={() => onSort('buying_price')}
+            >
+              Buying Price {getSortIcon('buying_price')}
+            </th>
+            <th 
+              className="sortable-header"
+              style={{ 
+                boxSizing: 'border-box', 
+                width: 110, 
+                padding: '12px 8px', 
+                textAlign: 'right',
+                cursor: 'pointer',
+                userSelect: 'none'
+              }}
+              onClick={() => onSort('selling_price')}
+            >
+              Selling Price {getSortIcon('selling_price')}
+            </th>
+            <th 
+              className="sortable-header"
+              style={{ 
+                boxSizing: 'border-box', 
+                width: 110, 
+                padding: '12px 8px', 
+                textAlign: 'center',
+                cursor: 'pointer',
+                userSelect: 'none'
+              }}
+              onClick={() => onSort('stock_qty')}
+            >
+              Stock Qty {getSortIcon('stock_qty')}
+            </th>
             <th style={{ boxSizing: 'border-box', width: 140, padding: '12px 8px', textAlign: 'center' }}>Actions</th>
           </tr>
         </thead>
